@@ -9,7 +9,7 @@ package codewars.kataexercises.ex1;
 
 public class squareNsum {
     
-    public static int squareNsum(int[] nums) {
+    public static int sqrtSum(int[] nums) {
 //        int sqrSum = 0;
 //        for (int i = 0; i < nums.length; i++) {
 //            sqrSum += nums[i] * nums[i];
@@ -24,7 +24,7 @@ public class squareNsum {
     }
     
     public static void main(String[] args) {
-        System.out.println(squareNsum(new int[]{1, 2, 2, 4, 7}));
+        System.out.println(sqrtSum(new int[]{1, 2, 2, 4, 7}));
     }
     
 }
