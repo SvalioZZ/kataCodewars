@@ -1,7 +1,5 @@
 package codewars.kataexercises.Main;
 
-import java.util.List;
-
 public class Student {
     
     String name;
@@ -21,6 +19,10 @@ public class Student {
 //        return "*** new student created ***\n" + name + " - " + surname + " - " + age;
 //    }
     
+    
+    public int getAge(int i) {
+        return age;
+    }
     
     @Override
     public String toString() {
