@@ -30,12 +30,20 @@ public class NumberUtils {
         System.out.println(isNarcissistic(112));
     }
     
+//    public static boolean isNarcissistic(int number) {
+//        String numberStr = String.valueOf(number);
+//        int[] digits = new int[numberStr.length()];
+//        int sum = 0;
+//        for (int i = 0; i < numberStr.length(); i++) {
+//            sum += Math.pow(Integer.parseInt(String.valueOf(numberStr.charAt(i))), numberStr.length());
+//        }
+//        return sum == number;
+//    }
     public static boolean isNarcissistic(int number) {
         String numberStr = String.valueOf(number);
-        int[] digits = new int[numberStr.length()];
         int sum = 0;
         for (int i = 0; i < numberStr.length(); i++) {
-            sum += Math.pow(Integer.parseInt(String.valueOf(numberStr.charAt(i))), numberStr.length());
+           sum += Math.pow(numberStr.charAt(i) - '0', numberStr.length());
         }
         return sum == number;
     }
